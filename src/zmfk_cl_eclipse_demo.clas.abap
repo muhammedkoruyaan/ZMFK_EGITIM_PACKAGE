@@ -1,0 +1,19 @@
+CLASS zmfk_cl_eclipse_demo DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+    METHODS: quote IMPORTING text TYPE char100 RETURNING VALUE(result) TYPE char100.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS zmfk_cl_eclipse_demo IMPLEMENTATION.
+  METHOD quote.
+  result = text.
+  ENDMETHOD.
+ENDCLASS.
+
